@@ -1,6 +1,8 @@
 apiVersion: core.oam.dev/v1beta1
 kind: Application
 metadata:
+  annotations:
+    app.oam.dev/publishVersion: graph-image-param-v5
   name: patient9
   namespace: default
 spec:
