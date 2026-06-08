@@ -1,8 +1,6 @@
 apiVersion: core.oam.dev/v1beta1
 kind: Application
 metadata:
-  annotations:
-    app.oam.dev/publishVersion: graph-image-param-v5
   name: patient9
   namespace: default
 spec:
@@ -48,7 +46,6 @@ spec:
     type: graphql-gateway
     properties:
       name: patient9-graph
-      image: healthidpuaeacr.azurecr.io/patient9-graph@sha256:7c3171f6720c195b344f03399972526f39073b7edcaad86366ec0df3256e6a61
       identity: patient9-auth0
       sources:
       - name: patient9-api
